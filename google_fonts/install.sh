@@ -24,7 +24,7 @@ git clone https://github.com/google/fonts.git /tmp/google_fonts
 
 while read -r line
 do
-	mv "$line" "$FP"
+	sudo mv "$line" "$FP"
 done < <(find /tmp/google_fonts -type f | grep ttf)
 
 rm -rf /tmp/google_fonts
